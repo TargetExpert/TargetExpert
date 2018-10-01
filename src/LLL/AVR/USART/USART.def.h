@@ -21,6 +21,7 @@
 
 #pragma __FunCX_Section Begin
 
+/*
 #include <stdbool.h>
 
 #include <math.h>
@@ -28,6 +29,8 @@
 #include "AVR_machines.h"
 #include "BasicFunc_Mac.h"
 #include "BitSet_Mac.h"
+*/
+#include "Common.inc.h"
 
 #pragma __FunCX_InLevel_Except Begin
 

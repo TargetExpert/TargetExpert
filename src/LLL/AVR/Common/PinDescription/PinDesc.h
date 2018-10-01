@@ -20,14 +20,19 @@
 #define _PinDesc_h_
 
 #include "TargetDef.h"
+#include "BitSet_Mac.h"
 
 // re-define Port & Pin.
 
 // sbi(PORTA, PA0) to PORTA_0 = (0 or 1).
 // PORT(Phriperal Alphabat)(Pin Number)
 
+/*
 #define DECL_PORT_DDR_WRITE_B(__RegNameA, __RegNameB, __PhriAlpha, __PinNum, __Value) \
   __RegNameA##__RegNameB##__PhriAlpha |= (((__Value) ? 1 : 0) << __RegNameA##__PhriAlpha##__PinNum)
+*/
+#define DECL_PORT_DDR_WRITE_B(__RegNameA, __RegNameB, __PhriAlpha, __PinNum, __Value) \
+  sclb_reg_common(__RegNameA##__RegNameB, , __PhriAlpha, __Value, , __RegNameA##__PhriAlpha##__PinNum, )
 
 #define DECL_PORT_DDR_PIN_READ_B(__RegNameA, __RegNameB, __PhriAlpha, __PinNum) \
   (bit_is_set(__RegNameA##__RegNameB##__PhriAlpha, __RegNameA##__PhriAlpha##__PinNum) ? 1 : 0)
