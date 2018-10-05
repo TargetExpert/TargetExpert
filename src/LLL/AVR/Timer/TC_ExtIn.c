@@ -25,13 +25,6 @@
 
 #include "U_Math.h"
 
-/*
-#include "USART.h"
-#include <stdio.h>
-#include <string.h>
-*/
-//static double xman[PWM_Prescalar_Qty];
-
 void _UpdateWGMode(uint8_t __PeriNum) {
   // _UpdateWGMode (for ICF, OCR(Toggle Mode))
   // update module for waveform generation mode.
@@ -345,9 +338,3 @@ TCFreqOptiValueStoreage _GetTCPeriodAutoSelectionByPeripheral(uint8_t __PeriNum,
   // all variables summations is 107(min) ~ 112(max) bytes.
   // maximum raise stack memory is 287(min) ~ 292(max) bytes.
 }
-
-/*
-double Get_xman(uint8_t __Perinum) {
-  return xman[__Perinum];
-}
-*/
