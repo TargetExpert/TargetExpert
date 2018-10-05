@@ -8,7 +8,7 @@
 
        Created: 2018/04/21
 
- Copyright (c) 2018, TargetExpert Project, and Gabriel Kim(Doohoon Kim)
+ Copyright (c) 2018, TargetExpert Project is Gabriel Kim(Doohoon Kim),
  All rights reserved.
 
  ** The "TargetExpert" is distributed under the "3-clause BSD" license.
