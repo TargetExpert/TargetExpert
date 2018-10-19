@@ -268,14 +268,14 @@
 #if defined(TCCR1A)
 #define InitialFormOptInfoValues1 , InitialFormOptInfoValues
 #else
-#define InitialFormOptInfoValues Null_
+#define InitialFormOptInfoValues1 Null_
 #endif
 
 // T/C 2
 #if defined(TCCR2) || defined(TCCR2A)
 #define InitialFormOptInfoValues2 , InitialFormOptInfoValues
 #else
-#define InitialFormOptInfoValues Null_
+#define InitialFormOptInfoValues2 Null_
 #endif
 
 // T/C 3
