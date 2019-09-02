@@ -172,14 +172,14 @@
     IfSafe_(__Target < AVR_MODE_BIT(3), \
       SwitchSafe_(__Target, \
         CaseSafe_(0, \
-          sclb_reg_common(UCSR, __PeriNum, B, __Enable, TXEN, __PeriNum, ); \
+          sclb_reg_common(UCSR, __PeriNum, B, __Enable, TXEN##__PeriNum, , ); \
         ) \
         CaseSafe_(1, \
-          sclb_reg_common(UCSR, __PeriNum, B, __Enable, RXEN, __PeriNum, ); \
+          sclb_reg_common(UCSR, __PeriNum, B, __Enable, RXEN##__PeriNum, , ); \
         ) \
         CaseSafe_(2, \
-          sclb_reg_common(UCSR, __PeriNum, B, __Enable, TXEN, __PeriNum, ); \
-          sclb_reg_common(UCSR, __PeriNum, B, __Enable, RXEN, __PeriNum, ); \
+          sclb_reg_common(UCSR, __PeriNum, B, __Enable, TXEN##__PeriNum, , ); \
+          sclb_reg_common(UCSR, __PeriNum, B, __Enable, RXEN##__PeriNum, , ); \
         ) \
       ) \
     ) \
@@ -194,14 +194,14 @@
     IfSafe_(__Target < AVR_MODE_BIT(3), \
       SwitchSafe_(__Target, \
         CaseSafe_(0, \
-          sclb_reg_common(UCSR, __PeriNum, B, __Enable, TXCIE, __PeriNum, ); \
+          sclb_reg_common(UCSR, __PeriNum, B, __Enable, TXCIE##__PeriNum, , ); \
         ) \
         CaseSafe_(1, \
-          sclb_reg_common(UCSR, __PeriNum, B, __Enable, RXCIE, __PeriNum, ); \
+          sclb_reg_common(UCSR, __PeriNum, B, __Enable, RXCIE##__PeriNum, , ); \
         ) \
         CaseSafe_(2, \
-          sclb_reg_common(UCSR, __PeriNum, B, __Enable, TXCIE, __PeriNum, ); \
-          sclb_reg_common(UCSR, __PeriNum, B, __Enable, RXCIE, __PeriNum, ); \
+          sclb_reg_common(UCSR, __PeriNum, B, __Enable, TXCIE##__PeriNum, , ); \
+          sclb_reg_common(UCSR, __PeriNum, B, __Enable, RXCIE##__PeriNum, , ); \
         ) \
       ) \
     ) \
