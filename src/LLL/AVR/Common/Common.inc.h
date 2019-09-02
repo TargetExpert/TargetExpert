@@ -20,6 +20,7 @@
 #define _Common_inc_h_
 
 #include <stdbool.h>
+#include <stdint.h>
 #include <stddef.h>
 
 #include <math.h>

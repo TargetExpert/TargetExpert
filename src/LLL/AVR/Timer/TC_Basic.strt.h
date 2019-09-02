@@ -22,6 +22,7 @@
 #pragma __FunCX_Section Begin
 
 #include <stdbool.h>
+#include <stdint.h>
 
 #pragma __FunCX_InLevel_Except Begin
 
