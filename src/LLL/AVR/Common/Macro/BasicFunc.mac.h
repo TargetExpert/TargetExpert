@@ -19,7 +19,7 @@
 #ifndef _BasicFunc_mac_h_
 #define _BasicFunc_mac_h_
 
-#include "Syntax_Mac.h"
+#include "Syntax.mac.h"
 
 #define IMPL_DECL_CONTENTS(Contents) \
   Syntax_Contents(Contents)

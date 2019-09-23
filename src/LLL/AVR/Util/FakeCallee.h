@@ -19,7 +19,7 @@
 #ifndef _FakeCallee_h_
 #define _FakeCallee_h_
 
-#include "BasicFunc_Mac.h"
+#include "BasicFunc.mac.h"
 
 #define __FakeCallee \
   DECL_FUNC(static, void *, FakeCallee, HELPER_PARAM_VAR()) {}\

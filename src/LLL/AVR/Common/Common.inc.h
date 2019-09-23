@@ -26,9 +26,9 @@
 #include <math.h>
 
 #include "AVR_machines.h"
-#include "BasicFunc_Mac.h"
-#include "BitSet_Mac.h"
-#include "FuncImplSet_mac.h"
+#include "BasicFunc.mac.h"
+#include "BitSet.mac.h"
+#include "FuncImplSet.mac.h"
 
 #include "FakeCallee.h"
 

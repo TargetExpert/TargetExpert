@@ -20,7 +20,7 @@
 #define _PinDesc_h_
 
 #include "TargetDef.h"
-#include "BitSet_Mac.h"
+#include "BitSet.mac.h"
 
 // re-define Port & Pin.
 
