@@ -21,4 +21,5 @@
 static unsigned int value = 0;
 
 IMPL_FUNC(, unsigned int, Get_ADCValue, void, return value;)
-IMPL_FUNC(, void, Set_ADCValue, unsigned int ADRES, value = ADCON1 >> 7 ? ADRES : ADRES >> 6;)
+IMPL_FUNC(, void, Set_ADCValue, unsigned int ADRES, \
+    value = rsv(ADCON1, 7) ? ADRES : rsv(ADRES, 6);)
