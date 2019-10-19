@@ -1,8 +1,8 @@
 /*********************************************************************
 
-          File: ADC.c
+          File: ADC.var.h
 
-   Description: AVR Analog-to-Digital converter Source Part.
+   Description: AVR ADC Variables definition Header Part.
 
         Author: Kwangyeon Kim (onting, hemool123@naver.com)
 
@@ -16,5 +16,9 @@
 
 *********************************************************************/
 
-#include "ADC.h"
+#ifndef _ADC_var_h_
+#define _ADC_var_h_
 
+#include "ADC.const.h"
+
+#endif //_ADC_var_h_

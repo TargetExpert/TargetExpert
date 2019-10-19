@@ -1,8 +1,8 @@
 /*********************************************************************
 
-          File: ADC.c
+          File: ADC.const.h
 
-   Description: AVR Analog-to-Digital converter Source Part.
+   Description: AVR ADC essential Constants definition Header Part.
 
         Author: Kwangyeon Kim (onting, hemool123@naver.com)
 
@@ -16,5 +16,9 @@
 
 *********************************************************************/
 
-#include "ADC.h"
+#ifndef _ADC_const_h_
+#define _ADC_const_h_
 
+#include "Common.inc.h"
+
+#endif //_ADC_const_h_
