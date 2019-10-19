@@ -21,4 +21,7 @@
 
 #include "ADC.const.h"
 
+DECL_FUNC(, unsigned int, Get_ADCValue, void);
+DECL_FUNC(, void, Set_ADCValue, unsigned int ADRES);
+
 #endif //_ADC_var_h_

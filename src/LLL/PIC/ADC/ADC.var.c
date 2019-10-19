@@ -17,3 +17,8 @@
 *********************************************************************/
 
 #include "ADC.var.h"
+
+static unsigned int value = 0;
+
+IMPL_FUNC(, unsigned int, Get_ADCValue, void, return value;)
+IMPL_FUNC(, void, Set_ADCValue, unsigned int ADRES, value = ADFM ? ADRES : ADRES >> 8;)
