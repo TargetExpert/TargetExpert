@@ -30,5 +30,5 @@ DECL_FUNC(, void, Set_On_ADC, bool Enable) \
 DECL_FUNC(, void, Set_PortConfigBit, unsigned int mode) \
     Set_PortConfigBit_D(mode);
 
-DECL_FUNC(, void, Get_Result, void) \
+DECL_FUNC(, unsigned int, Get_Result, void) \
     Get_Result_D()
