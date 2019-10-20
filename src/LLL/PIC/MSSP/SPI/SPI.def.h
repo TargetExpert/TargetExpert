@@ -129,7 +129,7 @@
 #pragma __FunCX_InLevel_Except End
  */
 
-#if defined(SSP1CON1)
+#if defined(SSP1CON1_ADDR)
 #define Set_MasterSlave_SPI1_D(Mode) \
   Set_MasterSlave_SPI_D_Proto(1, 1, , , Mode)
 #define Set_BusMode_SPI1_D(Mode) \
@@ -144,7 +144,7 @@
   Check_Rx_Overflow_SPI_D_Proto(1, 1, , Syntax)
 //#define Check_Tx_Collision_SPI1_D(Syntax) \
   Check_Tx_Collision_SPI_D_Proto(1, 1, , Syntax)
-#elif defined(SSPCON)
+#elif defined(SSPCON_ADDR)
 #define Set_MasterSlave_SPI1_D(Mode) \
   Set_MasterSlave_SPI_D_Proto(, , , , Mode)
 #define Set_BusMode_SPI1_D(Mode) \
@@ -160,7 +160,7 @@
 //#define Check_Tx_Collision_SPI1_D(Syntax) \
   Check_Tx_Collision_SPI_D_Proto(, , , Syntax)
 #endif
-#if defined(SSP2CON1)
+#if defined(SSP2CON1_ADDR)
 #define Set_MasterSlave_SPI2_D(Mode) \
   Set_MasterSlave_SPI_D_Proto(2, 1, _SSP2CON1, _SSP2STAT, Mode)
 #define Set_BusMode_SPI2_D(Mode) \
@@ -185,7 +185,7 @@
 #endif
 
 #if defined(_SSP1IE)
-  #if defined(PIE8)
+  #if defined(PIE8_ADDR)
   #define Set_Serial_Intr_SPI1_D(Enable) \
     Set_Serial_Intr_SPI_D_Proto(3, 1, Enable)
   //#define Hit_Serial_Intr_SPI1_D(Syntax) \
@@ -203,13 +203,13 @@
   Hit_Serial_Intr_SPI_D_Proto(1, , Syntax)
 #endif
 #if defined(_SSP2IE)
-  #if defined(PIE8)
+  #if defined(PIE8_ADDR)
   #define Set_Serial_Intr_SPI2_D(Enable) \
     Set_Serial_Intr_SPI_D_Proto(3, 2, Enable)
   //#define Hit_Serial_Intr_SPI2_D(Syntax) \
     Hit_Serial_Intr_SPI_D_Proto(3, 2, Syntax)
-  #elif defined(PIE4)
-    #if defined(PIE0)
+  #elif defined(PIE4_ADDR)
+    #if defined(PIE0_ADDR)
     #define Set_Serial_Intr_SPI2_D(Enable) \
       Set_Serial_Intr_SPI_D_Proto(2, 2, Enable)
     //#define Hit_Serial_Intr_SPI2_D(Syntax) \

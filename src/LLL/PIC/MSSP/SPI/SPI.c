@@ -188,14 +188,14 @@ void Send_String(uint8_t *String) {
     while(*Data_String) Send_One_SPI##__Num(*Data_String++); \
   )
 
-#if defined(SSP1CON1)
+#if defined(SSP1CON1_ADDR)
 Send_One_SPI_Func(1, 1, 1, , )
 Send_String_SPI_Func(1)
-#elif defined(SSPCON)
+#elif defined(SSPCON_ADDR)
 Send_One_SPI_Func(1, , , , )
 Send_String_SPI_Func(1)
 #endif
-#if defined(SSP2CON1)
+#if defined(SSP2CON1_ADDR)
 Send_One_SPI_Func(2, 2, 1, _SSP2CON1, _SSP2STAT)
 Send_String_SPI_Func(2)
 #endif
