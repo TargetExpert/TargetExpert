@@ -32,7 +32,7 @@
 #define INT_BQTY AVR_MODE_BIT(2)
 #define INTF_BQTY AVR_MODE_BIT(2)
 
-#pragma __FunCX_InLevel_Except End
+#pragma __FunCX_InLevel_Exgicept End
 
 // Set_InterruptSenseCont_ExtInt(n) Definition
 #pragma __FunCX_InLevel_Except Begin
