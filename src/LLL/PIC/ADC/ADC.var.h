@@ -2,7 +2,7 @@
 
           File: ADC.var.h
 
-   Description: AVR ADC Variables definition Header Part.
+   Description: PIC ADC Variables definition Header Part.
 
         Author: Kwangyeon Kim (onting, hemool123@naver.com)
 

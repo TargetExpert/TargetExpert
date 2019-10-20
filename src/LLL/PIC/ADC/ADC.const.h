@@ -2,7 +2,7 @@
 
           File: ADC.const.h
 
-   Description: AVR ADC essential Constants definition Header Part.
+   Description: PIC ADC essential Constants definition Header Part.
 
         Author: Kwangyeon Kim (onting, hemool123@naver.com)
 

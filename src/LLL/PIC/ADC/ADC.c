@@ -2,7 +2,7 @@
 
           File: ADC.c
 
-   Description: AVR Analog-to-Digital converter Source Part.
+   Description: PIC Analog-to-Digital converter Source Part.
 
         Author: Kwangyeon Kim (onting, hemool123@naver.com)
 

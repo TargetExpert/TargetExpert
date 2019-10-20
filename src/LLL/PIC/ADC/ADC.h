@@ -2,7 +2,7 @@
 
           File: ADC.h
 
-   Description: AVR Analog-to-Digital converter Header Part.
+   Description: PIC Analog-to-Digital converter Header Part.
 
         Author: Kwnagyeon Kim (onting, hemool123@naver.com)
 

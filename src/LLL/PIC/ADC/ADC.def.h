@@ -2,7 +2,7 @@
 
           File: ADC.def.h
 
-   Description: AVR Analog-to-Digital converter syntax definition
+   Description: PIC Analog-to-Digital converter syntax definition
                 Header Part.
 
         Author: Kwangyeon Kim (onting, hemool123@naver.com)
@@ -21,5 +21,10 @@
 #define _ADC_def_h_
 
 #include "ADC.var.h"
+
+#define Set_Channel_ADC_D(Channel) \
+    C_(\
+        ADCON0 \
+    )
 
 #endif //_ADC_def_h_

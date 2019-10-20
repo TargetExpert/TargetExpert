@@ -2,7 +2,7 @@
 
           File: ADC.var.c
 
-   Description: AVR ADC Variables definition Source Part.
+   Description: PIC ADC Variables definition Source Part.
 
         Author: Kwangyeon Kim (onting, hemool123@naver.com)
 
