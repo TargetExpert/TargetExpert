@@ -21,10 +21,11 @@
 
 #include "ADC.def.h"
 
-DECL_FUNC(, void __attribute__((weak)), Set_Channel_ADC, unsigned int Channel);
-DECL_FUNC(, void __attribute__((weak)), Set_ConversionClock_ADC, unsigned int mode);
-DECL_FUNC(, void __attribute__((weak)), Set_On_ADC, bool Enable);
-DECL_FUNC(, void __attribute__((weak)), Set_ResultFormet_ADC, unsigned int mode);
-DECL_FUNC(, void __attribute__((weak)), Set_PortConfigBit, unsigned int mode);
+DECL_FUNC(, void, Set_Channel_ADC, unsigned int Channel);
+DECL_FUNC(, void, Set_ConversionClock_ADC, unsigned int mode);
+DECL_FUNC(, void, Set_On_ADC, bool Enable);
+DECL_FUNC(, void, Set_ResultFormet_ADC, unsigned int mode);
+DECL_FUNC(, void, Set_PortConfigBit, unsigned int mode);
+DECL_FUNC(, void, Get_Result, void);
 
 #endif //_ADC_h_
