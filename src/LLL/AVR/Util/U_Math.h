@@ -1,8 +1,8 @@
 /*********************************************************************
 
-          File: U_Math.c
+          File: U_Math.h
 
-   Description: AVR utils part of Math Source Part.
+   Description: AVR utils part of Math Header Part.
 
         Author: Doohoon Kim (Gabriel Kim, invi.dh.kim@gmail.com)
 
