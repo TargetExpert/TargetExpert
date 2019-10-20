@@ -18,3 +18,17 @@
 
 #include "ADC.h"
 
+DECL_FUNC(, void, Set_Channel_ADC, unsigned int Channel) \
+    Set_Channel_ADC_D(Channel)
+
+DECL_FUNC(, void, Set_ConversionClock_ADC, unsigned int mode) \
+    Set_ConversionClock_ADC_D(mode)
+
+DECL_FUNC(, void, Set_On_ADC, bool Enable) \
+    Set_On_ADC_D(Enable)
+
+DECL_FUNC(, void, Set_PortConfigBit, unsigned int mode) \
+    Set_PortConfigBit_D(mode);
+
+DECL_FUNC(, void, Get_Result, void) \
+    Get_Result_D()
