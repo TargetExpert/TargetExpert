@@ -205,7 +205,7 @@ Send_String_SPI_Func(2)
  * Invoking(Interrupt Invoker) Functions(Set_RxInvokeFuncn, Set_TxInvokeFuncn).
  */
 
-#define IMPL_SET_FUNCP(__Type, __FuncName, __DestValue,) \
+#define IMPL_SET_FUNCP(__Type, __FuncName, __DestValue) \
   IMPL_FUNC(, void, Set_##__FuncName, __Type *(*__InvokeFunc_SPI)(), \
     __DestValue = __InvokeFunc_SPI; \
   )

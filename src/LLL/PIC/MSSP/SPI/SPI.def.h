@@ -55,7 +55,7 @@
 // Definition Prototyping.
 #define Set_BusMode_SPI_D_Proto(__PeriNum, __Chan, __PreA, __PreB, __Mode) \
   C_( \
-    IfSafe_(__Mode >= 0 && __Mode < pow(2, SCK_SPI_BQTY), \
+    IfSafe_(__Mode >= 0 && __Mode < powf(2, SCK_SPI_BQTY), \
       register unsigned char i = 0; \
       ForSafe_(i = 0, i < SCK_SPI_BQTY, i++, \
         (i != 0) ? \
@@ -71,7 +71,7 @@
 // Definition Prototyping.
 #define Set_SampleBit_SPI_D_Proto(__PeriNum, __Prefix, __Sample) \
   C_( \
-    IfSafe_(__Sample >= 0 && __Sample < pow(2, SMP_SPI_BQTY), \
+    IfSafe_(__Sample >= 0 && __Sample < powf(2, SMP_SPI_BQTY), \
       sclb_reg_common(SSP, __PeriNum, STAT, __Sample, CONV_BIT_(__Prefix##_SMP), , ); \
     ) \
   )
@@ -180,7 +180,7 @@
 #if defined(_PEIE)
 #define Set_Global_Intr_SPI_D(Enable) \
   Set_Global_Intr_SPI_D_Proto(Enable)
-#define Set_Peripheral_Intr_SPI_D_(Enable) \
+#define Set_Peripheral_Intr_SPI_D(Enable) \
   Set_Peripheral_Intr_SPI_D_Proto(Enable)
 #endif
 
@@ -225,7 +225,9 @@
     Set_Serial_Intr_SPI_D_Proto(1, 2, Enable)
   //#define Hit_Serial_Intr_SPI2_D(Syntax) \
     Hit_Serial_Intr_SPI_D_Proto(1, 2, Syntax)
+  #endif
 #endif
+
 /*
  * Reserved ISR Processing
  *
@@ -233,6 +235,7 @@
 #define Hit_Serial_Intr_SPI2_D(Syntax)
 #endif
  */
+
 #pragma __FunCX_Section End
 
 #endif // _SPI_DEF_H_

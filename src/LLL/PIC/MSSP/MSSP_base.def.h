@@ -63,7 +63,7 @@
 // Definition Prototyping.
 #define Set_SerialPort_MSSP_D_Proto(__PeriNum, __Chan, __Prefix, __Enable) \
   C_( \
-    IfSafe_(__Enable >= 0 && __Enable < pow(2, SSPEN_BQTY), \
+    IfSafe_(__Enable >= 0 && __Enable < powf(2, SSPEN_BQTY), \
       Set_SerialPort_MSSP_D_Block(__PeriNum, __Chan, __Prefix, __Enable) \
     ) \
   )
@@ -74,7 +74,7 @@
 // Definition Prototyping.
 #define Set_Global_Intr_MSSP_D_Proto(__Enable) \
   C_( \
-    IfSafe_(__Enable >= 0 && __Enable < pow(2, GIE_BQTY), \
+    IfSafe_(__Enable >= 0 && __Enable < powf(2, GIE_BQTY), \
       sclb_reg_common(INT, , CON, __Enable, CONV_BIT_(_GIE), , ); \
     ) \
   )
@@ -85,7 +85,7 @@
 // Definition Prototyping.
 #define Set_Peripheral_Intr_MSSP_D_Proto(__Enable) \
   C_( \
-    IfSafe_(__Enable >= 0 && __Enable < pow(2, PEIE_BQTY), \
+    IfSafe_(__Enable >= 0 && __Enable < powf(2, PEIE_BQTY), \
       sclb_reg_common(INT, , CON, __Enable, CONV_BIT_(_PEIE), , ); \
     ) \
   )
@@ -96,7 +96,7 @@
 // Definition Prototyping.
 #define Set_Serial_Intr_MSSP_D_Proto(__Chan, __BitNum, __Enable) \
   C_( \
-    IfSafe_(__Enable >= 0 && __Enable < pow(2, SSPIE_BQTY), \
+    IfSafe_(__Enable >= 0 && __Enable < powf(2, SSPIE_BQTY), \
       sclb_reg_common(PIE, , __Chan, __Enable && bit_is_set(INTCON, _PEIE) && \
       bit_is_set(INTCON, _GIE), CONV_BIT_(_SSP##__BitNum##IE), , ); \
     ) \
