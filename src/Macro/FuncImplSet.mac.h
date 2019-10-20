@@ -19,7 +19,11 @@
 #ifndef _FuncImplSet_mac_h_
 #define _FuncImplSet_mac_h_
 
+<<<<<<< HEAD:src/LLL/AVR/Common/Macro/FuncImplSet_mac.h
 #include "BasicFunc_Mac.h"
+=======
+#include "BasicFunc.mac.h"
+>>>>>>> 88f5520dfd05fe95f2e12f713b3773d24453e5b6:src/Macro/FuncImplSet.mac.h
 
 #define IMPL_GET_FUNC(__ReturnType, __FuncName, __ReturnValue) \
   IMPL_FUNC(, __ReturnType, Get_##__FuncName, , return __ReturnValue;)
