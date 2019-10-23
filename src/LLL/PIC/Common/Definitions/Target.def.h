@@ -19,6 +19,7 @@
 #ifndef _TARGET_DEF_H_
 #define _TARGET_DEF_H_
 
+#include <pic14regs.h>
 #include <pic14/sdcc-lib.h>
 #include <pic14/pic16fam.h>
 #include <pic14/pic16regs.h>
