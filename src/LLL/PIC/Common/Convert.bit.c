@@ -1,12 +1,12 @@
 /*********************************************************************
 
-          File: U_Math.h
+          File: Convert.bit.c
 
-   Description: AVR utils part of Math Header Part.
+   Description: PIC Bit Conversion Source Part.
 
-        Author: Doohoon Kim (Gabriel Kim, invi.dh.kim@gmail.com)
+        Author: Jinseong Jeon (aimer120@nate.com)
 
-       Created: 2018/05/04
+       Created: 2019/10/19
 
  Copyright (c) 2018, TargetExpert Project is Gabriel Kim(Doohoon Kim),
  All rights reserved.
@@ -16,11 +16,10 @@
 
 *********************************************************************/
 
-#ifndef _U_Math_h_
-#define _U_Math_h_
+#include "Convert.bit.h"
 
-#include <stdint.h>
-
-uint32_t pow_2i(uint8_t y);
-
-#endif // _U_Math_h_
+unsigned char weight2bit(unsigned char weight) {
+  int bit = 0;
+  while ((weight>>=1)>0) { bit++; }
+  return bit;
+}

@@ -1,12 +1,12 @@
 /*********************************************************************
 
-          File: U_Math.h
+          File: TargetDef.h
 
-   Description: AVR utils part of Math Header Part.
+   Description: Target Definition macro Header Part.
 
-        Author: Doohoon Kim (Gabriel Kim, invi.dh.kim@gmail.com)
+        Author: Jinseong Jeon (aimer120@nate.com)
 
-       Created: 2018/05/04
+       Created: 2019/10/20
 
  Copyright (c) 2018, TargetExpert Project is Gabriel Kim(Doohoon Kim),
  All rights reserved.
@@ -16,11 +16,13 @@
 
 *********************************************************************/
 
-#ifndef _U_Math_h_
-#define _U_Math_h_
+#ifndef _TARGET_DEF_H_
+#define _TARGET_DEF_H_
 
-#include <stdint.h>
+#include <pic14/sdcc-lib.h>
+#include <pic14/pic16fam.h>
+#include <pic14/pic16regs.h>
+//TODO: 
+//	pic16 add
 
-uint32_t pow_2i(uint8_t y);
-
-#endif // _U_Math_h_
+#endif // _TARGET_DEF_H_

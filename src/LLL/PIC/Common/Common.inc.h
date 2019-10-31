@@ -4,11 +4,11 @@
 
    Description: PIC including Common Header Part.
 
-        Author: Kwangyeon Kim (onting, hemool123@naver.com)
+        Author: Jinseong Jeon (aimer120@nate.com)
 
-       Created: 2019/10/20
+       Created: 2019/10/08
 
- Copyright (c) 2019, TargetExpert Project is Gabriel Kim(Doohoon Kim),
+ Copyright (c) 2018, TargetExpert Project is Gabriel Kim(Doohoon Kim),
  All rights reserved.
 
  ** The "TargetExpert" is distributed under the "3-clause BSD" license.
@@ -16,15 +16,21 @@
 
 *********************************************************************/
 
-//This source code is written based on SDCC API
+#ifndef _COMMON_INC_H_
+#define _COMMON_INC_H_
 
-#ifndef _Common_inc_h_
-#define _Common_inc_h_
+#include <stdbool.h>
+#include <stdint.h>
+#include <stddef.h>
 
-#include <sdcc-lib.h>
-#include <pic14/sdcc-lib.h>
-#include <pic14/pic16fam.h>
-#include <pic14/pic16regs.h>
+#include <math.h>
+
+#include "PIC_machines.h"
+#include "BasicFunc.mac.h"
+#include "BitSet.mac.h"
+#include "PIC_BitSet.mac.h"
+#include "FuncImplSet.mac.h"
+//#include "FakeCallee.h"
 
 //define machine feature
 #if defined(__SDCC_PIC16F873A) || \
@@ -37,5 +43,4 @@
 
 #endif //feautre
 
-
-#endif // _Common_inc_h_
+#endif // _COMMON_INC_H_
