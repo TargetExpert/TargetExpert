@@ -2,5 +2,6 @@
 .srctree
 .idea
 .ignore
+.vscode
 
 !.gitignore
