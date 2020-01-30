@@ -41,11 +41,11 @@
   C_( \
     IfSafe_((__Mode >= 0 && __Mode < 6) || __Mode == 10, \
       register unsigned char i = 0; \
-      IFSafe_(!(__Mode == 5 && (SSP##__PeriNum##STAT & __PreB##_CKE)), \
+      if (!(__Mode == 5 && (SSP##__PeriNum##STAT & __PreB##_CKE))) { \
         ForSafe_(i = 0, i < SSPM_SPI_BQTY, i++, \
           Set_MasterSlave_SPI_D_Block(__PeriNum, __Chan, __PreA, __Mode) \
         ) \
-      ) \
+      } \
     ) \
   )
 #pragma __FunCX_InLevel_Except End

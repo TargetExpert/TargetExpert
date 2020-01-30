@@ -144,7 +144,7 @@
 Set_Global_Intr_SPI_Func()
 Set_Peripheral_Intr_SPI_Func()
 #endif
-#if defined(SSPCON) || defined(SSP1CON1)
+#if defined(SSPCON_ADDR) || defined(SSP1CON1_ADDR)
 Set_MasterSlave_SPI_Func(1)
 Set_BusMode_SPI_Func(1)
 Set_SampleBit_SPI_Func(1)
@@ -152,7 +152,7 @@ Set_SerialPort_SPI_Func(1)
 Set_Serial_Intr_SPI_Func(1)
 Reset_SPI_Func(1)
 #endif
-#if defined(SSP2CON1)
+#if defined(SSP2CON1_ADDR)
 Set_MasterSlave_SPI_Func(2)
 Set_BusMode_SPI_Func(2)
 Set_SampleBit_SPI_Func(2)
