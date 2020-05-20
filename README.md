@@ -12,11 +12,13 @@
 
 'TargetExpert' is a project designed to greatly reduce the programmer's effort to create Firmware Code by giving the benefits of re-use between the Firmware codes created between MCU machines and by operating multiple Target Machines with a common code only.
 
-## Uasge
+## Usage
 
 ### Quick Start
 
 ### Building
+
+## Contributing
 
 ## License
 
